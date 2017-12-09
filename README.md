@@ -4,6 +4,8 @@
 
 You can provide your own training images from any source by creating the appropriate directory structure. This repository optionally provides the ability to split a video into individual frames that can be used to quickly gather a significant number of training images.
 
+**For a full tutorial on how this works and how to use it, [click here](https://kylewbanks.com/blog/tutorial-transfer-learning-retraining-inception-mobilenet-with-tensorflow-and-docker).**
+
 ## Preparing Training Data from Videos
 
 1. Place your **.mp4** video files in [frame-extraction/videos/](./frame-extraction/videos/)
