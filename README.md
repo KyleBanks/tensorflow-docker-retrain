@@ -13,6 +13,19 @@ You can provide your own training images from any source by creating the appropr
 3. `docker run -it -v $(pwd)/frame-extraction:/data frame-extraction`
 4. Retrieve the split video frames from [frame-extraction/frames/](./frame-extraction/frames), and place in the appropriate directory structure.
 
+## Building input directory structure
+
+You should have a folder containing class-named subfolders, each full
+of images for each label. The example folder would have a structure like this:
+
+
+    ~/example/bench/bench.jpg
+    ~/example/deadlift/deadlift.jpg
+    ~/example/squat/anotherphoto77.jpg
+
+The **subfolder names are important**, since *they define what label is applied to
+each image*, but the **filenames themselves don't matter**. 
+
 ## Training the Classifier
 
 Before training you must build the generic `train-classifier` Docker image:
