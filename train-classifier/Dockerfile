@@ -11,7 +11,7 @@ ENV TRAINING_STEPS 1000
 VOLUME /output
 VOLUME /input
 
-RUN curl -O https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/examples/image_retraining/retrain.py
+RUN curl -O https://github.com/tensorflow/hub/blob/master/examples/image_retraining/retrain.py
 
 ENTRYPOINT python -m retrain \
   --how_many_training_steps="${TRAINING_STEPS}" \
