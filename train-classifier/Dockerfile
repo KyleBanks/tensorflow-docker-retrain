@@ -1,4 +1,4 @@
-FROM gcr.io/tensorflow/tensorflow:1.4.0
+FROM tensorflow/tensorflow:1.4.0
 
 MAINTAINER Kyle Banks <kyle@kwbanks.com>
 
