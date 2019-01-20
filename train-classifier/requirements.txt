@@ -1,0 +1,2 @@
+protobuf==3.6.0
+tensorflow_hub==0.2.0
