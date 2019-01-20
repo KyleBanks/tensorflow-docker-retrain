@@ -1,13 +1,13 @@
-FROM tensorflow/tensorflow:1.4.0
+FROM tensorflow/tensorflow:1.12.0
 
 MAINTAINER Kyle Banks <kyle@kwbanks.com>
 
-ENV IMAGE_SIZE 128
+ENV IMAGE_SIZE 299
 ENV IMAGE_MEAN 0
 ENV IMAGE_STD 255
 ENV GRAPH_FILE retrained_graph.pb
 ENV LABELS_FILE retrained_labels.txt
-ENV INPUT_LAYER input
+ENV INPUT_LAYER Placeholder
 ENV OUTPUT_LAYER final_result
 
 VOLUME /model
